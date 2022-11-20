@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên bài hát"
+        android:textSize="24sp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="11dp"/>
+    <!--prev-->
+    <ImageButton
+        android:id="@+id/btnprev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="80dp"
+        android:maxHeight="80dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/prev"
+        />
+    <!--    next-->
+    <ImageButton
+        android:id="@+id/btnnext"
+        android:maxWidth="90dp"
+        android:maxHeight="90dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="900px"
+        android:layout_marginLeft="28dp"
+        />
+<!--    play-->
+    <ImageButton
+        android:id="@+id/btnplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/play"
+        android:layout_marginStart="300px"
+        android:maxWidth="90dp"
+        android:maxHeight="90dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+    <!--    stop-->
+    <ImageButton
+        android:id="@+id/btnstop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="90dp"
+        android:maxHeight="90dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/stop"
+        android:layout_marginStart="600px" />
+<!--    seekbar-->
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/btnnext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:progressBackgroundTint="@color/white"
+        android:progressTint="#FA8072" />
+<!--    show duration process-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/startTime"
+        android:layout_above="@+id/seekbar"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="15dp"
+        />
+    <!--    show duration end-->
+    <TextView
+        android:id="@+id/endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="320dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="13dp"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</RelativeLayout>
